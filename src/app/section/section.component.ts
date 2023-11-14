@@ -7,12 +7,15 @@ import { SaaService } from '../saa.service';
   styleUrls: ['./section.component.css']
 })
 export class SectionComponent implements OnInit {
+  apidata:any;
   constructor(private data:SaaService){}
 
   
     ngOnInit() {
       this.data.getData().subscribe((r: any) => {
         console.log(r);
+        this.apidata=r.data
+        console.log(this.apidata);
       });
   }
  

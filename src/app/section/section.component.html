@@ -1,1 +1,8 @@
-<p>section works!</p>
+
+<ul>
+    <li *ngFor="let row of apiData">
+        <!-- <span *ngIf="row.id == 7"></span> -->
+        <p>{{row.email}}</p>
+        <img src="{{row.avatar}}">
+    </li>
+</ul>
