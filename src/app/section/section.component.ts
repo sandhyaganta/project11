@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { SaaService } from '../saa.service';
 
 @Component({
   selector: 'app-section',
   templateUrl: './section.component.html',
   styleUrls: ['./section.component.css']
 })
-export class SectionComponent {
+export class SectionComponent implements OnInit {
+  constructor(private data:SaaService){}
+  ngOnInit(): void {
+    
+  }
 
 }
