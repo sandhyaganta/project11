@@ -8,4 +8,7 @@ export class SaaService {
 
   private getUrl='';
   constructor(private http:HttpClient) { }
+  getData(){
+    return this.http.get(this.getUrl);
+  }
 }

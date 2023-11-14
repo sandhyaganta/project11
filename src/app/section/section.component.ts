@@ -8,8 +8,14 @@ import { SaaService } from '../saa.service';
 })
 export class SectionComponent implements OnInit {
   constructor(private data:SaaService){}
-  ngOnInit(): void {
-    
+
+  
+    ngOnInit() {
+      this.data.getData().subscribe((r: any) => {
+        console.log(r);
+      });
   }
+ 
 
 }
+
