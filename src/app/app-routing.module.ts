@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SectionComponent } from './section/section.component';
 import  { FooterComponent } from './footer/footer.component';
 
+
 const routes: Routes = [
   {
     path: "hai",
