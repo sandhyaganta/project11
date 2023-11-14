@@ -9,8 +9,8 @@ const routes: Routes = [
     component:SectionComponent,
   },
   {
-    path: "hello",
-    component:FooterComponent,
+    path: "hai1",
+    component:SectionComponent,
   }
  
   
